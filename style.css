@@ -32,6 +32,8 @@
     color: #333333;
 
     margin-right: 30px;
+    
+    cursor: pointer;
 }
 
 .header__registration {
@@ -67,12 +69,16 @@
     height: 15px;
     width: 15px;
     margin-right: 40px;
+
+    cursor: pointer;
 }
 
 .header__loginsvg {
     height: 18px;
     width: 60px;
     margin-right: 20px ;
+
+    cursor: pointer;
 }
 
 .header__number {
@@ -84,6 +90,8 @@
     margin-right: 103px;
 
     color: #6F6F6F;
+
+    cursor: pointer;
 }
 
 .header__registration {
@@ -101,10 +109,16 @@
     padding: 15px 30px;
     background: #FF6600;
     border-radius: 50px;
+
+    cursor: pointer;
 }
 
 .header__logo {
     margin-right: 70px;
+}
+
+.header__number {
+    width: 130px;
 }
 
 
@@ -212,6 +226,8 @@
     border-radius: 50px;
 
     margin-bottom: 16px;
+
+    cursor: pointer;
 }
 
 .landingBlock__note {
@@ -426,6 +442,8 @@
     border-radius: 39px;
 
     margin-right: 24px;
+
+    cursor: pointer;
 }
 
 .whomBlock__button_smallPadding {
@@ -462,7 +480,31 @@
     margin-bottom: 40px;
 }
 
-.comparisonBlock__tablePossibilityBodyText {
+.comparisonBlock__tablePossibility {
+    display: flex;
+    flex-wrap: wrap;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 8px 8px 10px 10px;
+}
+
+.comparisonBlock__tablePossibilityBodyRow {
+    padding-bottom: 20px;
+}
+
+.comparisonBlock__tablePossibilityBodyRowBorder {
+    width: 1200px;
+    height: 2px;
+    background: #EAEAEA;
+    border: 2px;
+
+    margin-bottom: 20px;
+}
+
+.comparisonBlock__tablePossibilityBodyRowText {
+    margin-left: 60px;
+    width: 660px;
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 400;
@@ -473,6 +515,12 @@
 }
 
 .comparisonBlock__tablePossibilityTitle {
+    margin-left: 60px;
+    width: 440px;
+    margin-right: 332px;
+    margin-top: 47px;
+    margin-bottom: 45px;
+
     font-family: 'PT Sans Caption';
     font-style: normal;
     font-weight: 700;
@@ -482,7 +530,615 @@
     color: #333333;
 }
 
-.comparisonBlock__table {
-    padding-left: 60px;
-    padding-top: 47px;
+.comparisonBlock__tablePossibilityTitle_prof {
+    padding-left: 0px;
+    width: 60px;
+    margin-right: 161px;
+    margin-left: 0px;
+
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #333333;
+}
+
+.comparisonBlock__tablePossibilityTitle_korp {
+    padding-left: 0px;
+    width: 54px;
+    margin-left: 0px;
+    margin-right: 93px;
+
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #333333; 
+}
+
+.comparisonBlock__tablePossibilityBodyRowSvg {
+    height: 17px;
+    width: 22px;
+}
+
+.comparisonBlock__tablePossibilityBodyRowSvg_min {
+    height: 6px;
+    width: 18px;
+    margin-right: 202px;
+    margin-left: 1px;
+}
+
+.comparisonBlock__tablePossibilityBodyRowSvg_leftApply {
+    margin-right: 200px;
+}
+
+.comparisonBlock__tablePossibilityBodyRowText {
+    width: 660px;
+    height: 24px;
+    margin-right: 127px;
+
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    
+    color: #333333;
+}
+
+.comparisonBlock__tablePossibilityBodyRow {
+    display: flex;
+}
+
+.slider {
+
+}
+
+.slider__main {
+
+}
+
+.slider__mainImg {
+    display: none;
+}
+
+.slider__mainImg_active {
+    display: flex;
+    width: 775px;
+    height: 503px;
+
+    background: center url(./img/sliderBackground.png);
+    background-position: right, bottom, 1px;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    filter: drop-shadow(4px 4px 44px rgba(0, 0, 0, 0.15));
+}
+
+
+
+
+
+
+
+.priceBlock__title {
+    margin-bottom: 50px;
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+
+    color: #333333;
+}
+
+.priceBlock__inputBlock {
+    display: flex;
+    margin-right: 24px;
+    height: 64px;
+    width: 384px;
+
+    border: 1px solid #B6B6B6;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.priceBlock__inputBlockText {
+    padding: 17px 0px 17px 28px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+
+    letter-spacing: 0.02em;
+
+    color: #6F6F6F;
+}
+
+.priceBlock__inputBlockText_ru{
+    padding: 17px 0px 17px 26px;
+}
+
+.priceBlock__inputBlockText_mail{
+    padding: 17px 287px 17px 28px;
+}
+
+.priceBlock__inputBlockText_number {
+    padding: 17px 242px 17px 0px;
+}
+
+.priceBlock__input {
+    display: flex;
+}
+
+.priceBlock__inputBlocArrowSvg {
+    margin: 30px 26px 30px 8px;
+    width: 10px;
+    height: 5px;
+
+    cursor: pointer;
+}
+
+.priceBlock__inputDescription {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 29px;
+
+    letter-spacing: 0.02em;
+
+    color: #6F6F6F;
+
+    margin-bottom: 33px;
+}
+
+.priceBlock__link{
+    width: 289px;
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+
+    padding: 15px 30px;
+    background: #FF6600;
+    border-radius: 50px;
+
+    margin: 0px 30px 0px 0px;
+
+    cursor: pointer;
+}
+
+.priceBlock__linkContainer {
+    display: flex;
+    align-items: center;
+}
+
+.priceBlock__linkDescription {
+    width: 645px;
+    height: 40px;
+
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    letter-spacing: 0.02em;
+
+    color: #6F6F6F;
+}
+
+#clickable {
+    cursor: pointer;
+}
+
+
+
+
+
+.reportsBlock__ItemText{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #333333;
+}
+
+.reportsBlock__ItemImage {
+    margin: 0px 32px 0px 0px;
+    width: 20px;
+    height: 20px;
+}
+
+.reportsBlock__Item {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 24px 0px;
+}
+
+.reportsBlock__title {
+    margin: 0px 0px 30px 0px;
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    
+    color: #333333;
+}
+
+
+
+
+
+
+
+
+.whyBlock__title {
+    width: 657px;
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    
+    color: #333333;
+
+    margin: 0px 0px 44px 0px;
+}
+
+.whyBlock__pointNumbers {
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 56px;
+
+    color: #178A00;
+}
+
+.whyBlock__pointText {
+    width: 317px;
+    margin: 0px 0px 44px 0px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #333333;
+}
+
+.whyBlock__pointsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.whyBlock {
+    width: 1160px;
+    display: flex;
+}
+
+.whyBlock__img {
+    margin: 100px 19px 0px 0px
+}
+
+.whyBlock__pointText_bottom {
+    margin: 0px 0px 31px 0px;
+}
+
+.whyBlock__more {
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration-line: underline;
+
+    color: #F76201;
+}
+
+.whyBlock__arrow {
+    margin: 31px 26px 30px 8px;
+    width: 12px;
+    height: 6px;
+    transform: rotate(-90deg);
+}
+
+.whyBlock__moreConteiner {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.maybeBlock {
+    width: 1160px;
+}
+
+.maybeBlock__title {
+    margin: 0px 0px 79px 0px;
+    
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+
+    color: #333333;
+}
+
+.maybeBlock__collumnsConteiner {
+    display: flex;
+    align-items: center;
+}
+
+.maybeBlock__collumn {
+    margin: 0px 62px 0px 0px;
+}
+
+
+.maybeBlock__collumnText {
+    width: 345px;
+    height: 120px;
+
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    
+    color: #333333;
+}
+
+.maybeBlock__collumnText_right {
+    margin: 0px 1px 0px 0px;
+}
+
+.maybeBlock__collumnTitleText {
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #333333;
+}
+
+.maybeBlock__collumnTitle {
+    display: flex;
+    align-items: center;
+
+    margin: 0px 0px 25px 0px;
+}
+
+.maybeBlock__collumnTitleImg {
+    margin: 0px 44px 0px 0px;
+}
+
+.maybeBlock__collumnLinkSvg_book {
+    width: 53px;
+    height: 40px;
+
+    margin: 0px 44px 0px 0px;
+}
+
+.maybeBlock__collumnLinkSvg_reporting {
+    width: 51px;
+    height: 48px;
+
+    margin: 0px 45px 0px 0px;
+}
+
+.maybeBlock__collumnLinkText {
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    
+    color: #F76201;
+}
+
+.maybeBlock__collumnLinkArrow {
+    margin: 7px 0px 0px 10px;
+    width: 12px;
+    height: 6px;
+    transform: rotate(-90deg);
+}
+
+.maybeBlock__collumnLink {
+    display: flex;
+    
+    cursor: pointer;
+}
+
+.maybeBlock__collumnLink_center {
+   margin: 5px 0px 0px 0px;
+}
+
+.input {
+    border: none;
+}
+
+
+
+
+
+
+
+
+.footer {
+    margin: 58px 0px 0px 0px;
+}
+
+.footerBlock__textCollumnBody {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+
+    color: #333333;
+}
+
+.footerBlock__textCollumnTitle {
+    margin: 0px 0px 37px 0px;
+
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+
+    color: #333333;
+}
+
+.footerBlock__textCollumn {
+    margin: 0px 133px 0px 0px;
+}
+
+.footerBlock__text {
+    display: flex;
+    margin: 0px 0px 81px 0px;
+}
+
+.footerBlock__textCollumn_penult {
+    margin: 0px 166px 0px 0px;
+}
+
+.footerBlock__textCollumn_right {
+    margin: 0px 0px 0px 0px;
+}
+
+.footerBlock__textCollumnLinkArrow {
+    margin: 7px 0px 0px 10px;
+    width: 12px;
+    height: 6px;
+}
+
+.footerBlock__textCollumnLinkText {
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: #FF6500;
+}
+
+.footerBlock__textCollumnLink {
+    display: flex;
+    margin: 22px 0px 0px 0px;
+}
+
+.footerBlock__infoContainer {
+    display: flex;
+    margin: 0px 81px 0px 0px;
+}
+
+.footerBlock__infoText {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerBlock__infoTextTitle {
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #333333;
+
+    margin: 0px 0px 14px 0px;
+}
+
+.footerBlock__infoTextsAddresses {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #333333;
+}
+
+.footerBlock__infoLogo {
+    margin: 0px 36px 0px 0px;
+}
+
+.footerBlock__infoSocialLogo {
+    height: 52px;
+    width: 52px;
+
+    margin: 0px 10px 0px 0px;
+}
+
+.footerBlock__infoSocialLogo_right {
+    margin: 0px 43px 0px 0px;
+}
+
+.footerBlock__info {
+    display: flex;
+}
+
+.footerBlock__infoDownload {
+    display: flex;
+
+    margin: 0px 0px 56px 0px;
+}
+
+.footerBlock__infoDownloadLogo {
+    width: 156px;
+    height: 50px;
+}
+
+.footerBlock__bottom {
+    display: flex;
+}
+
+.footerBlock__bottomText {
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration-line: underline;
+
+    color: #333333;
+
+    margin: 0px 637px 23px 0px;
+}
+
+.footerBlock__bottomSignature {
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+
+    color: #333333;
 }
