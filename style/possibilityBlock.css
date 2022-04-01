@@ -1,0 +1,126 @@
+.possibilityBlock__tableItemText {
+    width: 535px;
+    height: 30px;
+
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #333333;
+}
+
+.possibilityBlock__title {
+    margin: 0 0 30px 0;
+    
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    
+    color: #333333;
+}
+
+.possibilityBlock__tableRow {
+    display: flex;
+    margin: 0 0 24px 0;
+}
+
+.possibilityBlock__tableItem {
+    display: flex;
+    align-items: center;
+}
+
+.possibilityBlock__tableItem_left {
+    margin: 0 26px 0 0;
+}
+
+.possibilityBlock__tableItemImage {
+    width: 20px;
+    height: 20px;
+    margin: 0 32px 0 0;  
+}
+
+@media (max-width: 1919px) {
+    .possibilityBlock__tableItemText {
+        width: 428px;
+    }
+    
+    .possibilityBlock__tableRow:first-child {
+        margin: 0 0 24px 0;
+    }
+
+    .possibilityBlock__tableRow {
+        margin: 0 0 54px 0;
+    }
+
+    .possibilityBlock__tableRow:last-child {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1365px) {
+    .possibilityBlock__title {
+        margin: 0 0 38px 0;
+
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .possibilityBlock__tableItemText {
+        width: 588px;
+
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .possibilityBlock__tableRow {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .possibilityBlock__tableRow:first-child {
+        margin: 0;
+    }
+
+    .possibilityBlock__tableItem {
+        margin: 0 0 24px 0;
+    }
+}
+
+@media (max-width: 1365px) {
+    .possibilityBlock__title {
+        margin: 0 0 20px 0;
+
+        font-family: 'PT Sans Caption';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .possibilityBlock__tableItemText {
+        width: 236px;
+        height: 26px;
+
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .possibilityBlock__tableItemImage {
+        width: 18px;
+        height: 18px;
+        margin: 0 34px 0 0;  
+    }
+
+    .possibilityBlock__tableRow {
+        margin: 0;
+    }
+
+    .possibilityBlock__tableItem {
+        margin: 0 0 64px 0;
+    }
+}

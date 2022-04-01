@@ -1,0 +1,213 @@
+.whyBlock__title {
+    width: 657px;
+    margin: 0 0 44px 0;
+
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    
+    color: #333333;
+}
+
+.whyBlock__pointNumbers {
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 56px;
+
+    color: #178A00;
+}
+
+.whyBlock__pointText {
+    width: 317px;
+    margin: 0 0 44px 0;
+
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #333333;
+}
+
+.whyBlock__pointsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.whyBlock {
+    width: 1160px;
+    display: flex;
+}
+
+.whyBlock__imgWrapper {
+    width: 484px;
+    margin: 100px 19px 0 0;
+}
+
+.whyBlock__img {
+    width: 464px;
+}
+
+.whyBlock__pointText_bottom {
+    margin: 0 0 31px 0px;
+}
+
+.whyBlock__more {
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration-line: underline;
+
+    color: #F76201;
+}
+
+.whyBlock__arrow {
+    width: 12px;
+    height: 6px;
+    margin: 31px 26px 30px 8px;
+
+    transform: rotate(-90deg);
+}
+
+.whyBlock__moreConteiner {
+    display: flex;
+    align-items: center;
+    
+    cursor: pointer;
+}
+
+@media (max-width: 1919px) {
+    .whyBlock__pointText {
+        width: 250px;
+        margin: 0 25px 20px 0;
+
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .whyBlock__img {
+        position: relative;
+        z-index: 1;
+
+        width: 435px;
+        right: 100px;
+        bottom: 25px;
+        margin: 0;
+    }
+
+    .whyBlock__arrow {
+        width: 12px;
+        height: 6px;
+        margin: 2px 26px 0px 8px;
+    
+        transform: rotate(-90deg);
+    }
+}
+
+@media (max-width: 1365px) {
+    .whyBlock__title {
+        width: 535px;
+        margin: 0 0 30px 0;
+
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .whyBlock__point {
+        width: 320px;
+    }
+
+    .whyBlock__pointNumbers {
+        font-size: 20px;
+    }
+    
+    .whyBlock__pointText {
+        width: 329px;
+        margin: 0 0 28px 0;
+
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .whyBlock__imgWrapper {
+        width: 472px;
+        margin: 0 197px 33px 99px;
+    }
+    
+    .whyBlock__img {
+        width: 472px;
+    }
+
+    .whyBlock {
+        flex-wrap: wrap;
+
+        width: 641px;
+    }
+
+    .whyBlock__moreConteiner {
+        margin: 0 0 31px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .whyBlock__title {
+        width: 265px;
+        margin: 0 0 24px 0;
+    
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .whyBlock__pointsContainer {
+        flex-direction: column;
+    }
+
+    .whyBlock__pointNumbers {
+        margin: 0 0 9px 0;
+        
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .whyBlock__point {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        width: 288px;
+    }
+
+    .whyBlock__pointText {
+        text-align: center;
+
+        width: 240px;
+    }
+
+    .whyBlock__imgWrapper {
+        width: 288px; 
+
+        margin: 0;
+    }
+    
+    .whyBlock__img {
+        width: 288px; 
+
+        margin: 0;
+
+        position: static;
+    }
+    
+    .whyBlock {
+        flex-direction: column;
+
+        width: 288px;
+    }
+    
+}

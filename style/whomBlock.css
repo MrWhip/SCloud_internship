@@ -1,0 +1,222 @@
+.whomBlock__title {
+    margin: 0 0 23px 0;
+    
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+
+    color: #333333;
+}
+
+.whomBlock__description {
+    width: 1100px;
+    margin: 0 0 40px 0;
+
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+
+    letter-spacing: 0.02em;
+
+    color: #333333;
+}
+
+.whomBlock__tabCollumnTitle {
+    margin: 0 0 33px 0;
+    
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #333333;
+}
+
+.whomBlock__tabCollumnItemImage {
+    height: 11px;
+    width: 16px;
+    margin: 0 24px 0 0;
+}
+
+.whomBlock__tabCollumnItemText {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #333333;
+}
+
+.whomBlock__tabCollumnItem {
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+
+.whomBlock__tab {
+    display: none;
+}
+
+.whomBlock__tabCollumn {
+    width: 50%;
+}
+
+.whomBlock__tabCollumn_left {
+    margin: 0 31px 0 0;
+}
+
+.whomBlock__button {
+    padding: 15px 35px;
+    margin: 0 24px 0 0;
+
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #333333;
+
+    background: #FFFFFF;
+    border: 2px solid #EAEAEA;
+    box-sizing: border-box;
+    border-radius: 39px;
+
+    cursor: pointer;
+}
+
+.whomBlock__button_smallPadding {
+    padding: 15px 30px;
+}
+
+.whomBlock__button_bigPadding {
+    padding: 15px 45px;
+}
+
+.whomBlock__button_active {
+    border: 2px solid #FF6600;
+
+    color: #FF6600;
+}
+
+.whomBlock__buttonContainer {
+    display: flex;
+    margin: 0 0 40px 0;
+}
+
+.whomBlock__tab_active {
+    display: flex;
+}
+
+@media (max-width: 1919px) {
+    .whomBlock__description {
+        width: 988px;
+    }
+}
+
+@media (max-width: 1365px) {
+    .whomBlock__title {
+        margin: 0 0 30px 0;
+        
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .whomBlock__description {
+        width: 640px;
+        margin: 0 0 30px 0;
+
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .whomBlock__button {
+        padding: 15px 35px;
+        margin: 0 24px 0 0;
+    }
+
+    .whomBlock__buttonContainer {
+        margin: 0 0 30px 0;
+        align-items: center;
+
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .whomBlock__tab {
+        flex-wrap: wrap;
+    }
+
+    .whomBlock__button_smallPadding {
+        padding: 15px 30px;
+    }
+    
+    .whomBlock__button_bigPadding {
+        padding: 15px 45px;
+    }
+
+    .whomBlock__buttonWrapper {
+        width: 210px;
+    }
+
+    .whomBlock__tabCollumnTitle {
+        margin: 0 0 24px 0;
+        
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
+
+@media (max-width: 767px) {
+    .whomBlock__buttonContainer {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .whomBlock__title {
+        width: 208px;
+        margin: 0 0 16px 0;
+    }
+    
+    .whomBlock__description {
+        width: 288px;
+        margin: 0 0 20px 0;
+    
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .whomBlock__tabCollumnTitle {
+        margin: 0 0 20px 0;
+
+        font-size: 16px;
+        line-height: 21px;
+    }
+    
+    .whomBlock__tabCollumnItemText {
+        width: 240px;
+        font-size: 14px;
+    }
+
+    .whomBlock__tabCollumnItem {
+        margin: 0 0 16px 0;
+    }
+
+    .whomBlock__tabCollumn {
+        width: 100%;
+    }
+
+    .whomBlock__tabCollumn_left {
+        margin: 0;
+    }
+
+    .whomBlock__tabCollumnItemImage {
+        margin: 0 24px 0 0;
+    }
+}

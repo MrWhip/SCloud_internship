@@ -1,0 +1,116 @@
+.slider__main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider__dots {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    width: 146px;
+    height: 10px;
+    left: 527px;
+}
+
+.slider__dot {
+    width: 10px;
+    height: 10px;
+    margin: 40px 24px 0 0;
+
+    border-radius: 100%;
+    background: #999999;
+}
+
+.slider__dot_right {
+    margin: 40px 0 0 0;
+}
+
+.slider__dot_active {
+    background: #FF6600;
+}
+
+.slider__main {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+    left: 72px;
+}
+
+.slider__imgConteiner {
+    display: flex;
+    justify-content: center;
+}
+
+.slider__img {
+    display: none;
+}
+
+.slider__img_active {
+    display: flex;
+    position: relative;
+    z-index: 1;
+
+    width: 775px;
+    height: 503px;
+
+    /*background: center url(./img/sliderBackground.png);
+    background-position: right, bottom, 1px;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    filter: drop-shadow(4px 4px 44px rgba(0, 0, 0, 0.15));*/         /*Хотел реализовать последующие слайды за первым*/
+}
+
+.slider__mainArrow {
+    position: relative;
+
+    width: 140px;
+    height: 80px;
+    top: 43%;
+
+    border-radius: 45px;
+    background: #E2E2E2;
+    padding: 20px 70px 20px 30px;
+
+    cursor: pointer;
+}
+
+.slider__mainArrow_active {
+    background: #FF6600;
+}
+
+.slider__mainArrow_right {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.slider__mainArrowWrapper {
+    position: relative;
+
+    width: 140px;
+    height: 503px;
+
+    background: #ffffff;
+    appearance: none;
+    border: 0;
+}
+
+.slider__mainArrow_rightWrapper {
+    position: relative;
+    right: 40px;
+}
+
+.slider__mainArrow_leftWrapper {
+    position: relative;
+    left: 40px;
+}
+
+@media (max-width: 1919px) {
+    .slider__main {
+        left: -30px;
+    }
+
+    .slider__dots {
+        left: 425px;
+    }
+}

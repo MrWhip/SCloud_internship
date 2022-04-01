@@ -1,0 +1,123 @@
+.benefitsBlock__title {
+    margin: 0 0 30px 0;
+    
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    
+    color: #333333;
+}
+
+.benefitsBlock__card {
+    display: flex;
+
+    width: 384px;
+    height: 140px;
+    padding: 40px 30px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.benefitsBlock__cardImg {
+    width: 60px;
+    height: 60px;
+    margin: 0 24px 0 0;
+}
+
+.benefitsBlock__cards {
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 24px;
+}
+
+.benefitsBlock__cardText {
+    margin: 0 0 7px 0;
+
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+
+    color: #333333;
+}
+
+.benefitsBlock__cardText_orange{
+    font-size: 14px;
+
+    color: #FF6600;
+}
+
+@media (max-width: 1919px) {
+    .benefitsBlock__card {
+        width: 314px;
+        padding: 44px 12px 0px 18px;
+    }
+
+    .benefitsBlock__cardText {
+        width: 216px;
+
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .benefitsBlock__cardImg {
+        width: 50px;
+        height: 50px; 
+    }
+
+    .benefitsBlock__cardText_orange{
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 1365px) {
+    .benefitsBlock__title {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .benefitsBlock__card {
+        width: 310px;
+        padding: 44px 11px 0px 14px;
+    }
+
+    .benefitsBlock__cards {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .benefitsBlock__card {
+        width: 288px;
+        height: 100px;
+        padding: 25px 25px 0px 25px;
+    }
+
+    .benefitsBlock__cards {
+        gap: 16px;
+    }
+
+    .benefitsBlock__cardText {
+        margin: 0;
+
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .benefitsBlock__cardImg {
+        width: 33px;
+        height: 33px;
+        margin: 0 23px 0 0;
+    }
+
+    .benefitsBlock__cardText_bottom {
+        width: 182px;
+    }
+}

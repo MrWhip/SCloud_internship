@@ -1,0 +1,200 @@
+.comparisonBlock__title {
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    
+    color: #333333;
+
+    margin: 0px 0px 40px 0px;
+}
+
+.comparisonBlock__tablePossibility {
+    display: flex;
+    flex-wrap: wrap;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 8px 8px 10px 10px;
+}
+
+.comparisonBlock__tablePossibilityBodyRow {
+    padding: 0px 0px 20px 0px;
+}
+
+.comparisonBlock__tablePossibilityBodyRowBorder {
+    width: 1200px;
+    height: 2px;
+    background: #EAEAEA;
+    border: 2px;
+
+    margin: 0px 0px 20px 0px;
+}
+
+.comparisonBlock__tablePossibilityBodyRowText {
+    width: 660px;
+    margin: 0px 0px 0px 60px;
+
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    
+    color: #333333;
+}
+
+.comparisonBlock__tablePossibilityTitle {
+    width: 439px;
+    margin: 47px 332px 45px 60px;
+
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #333333;
+}
+
+.comparisonBlock__tablePossibilityTitle_prof {
+    width: 59px;
+    padding: 0;
+    margin: 47px 161px 0px 0px;
+
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #333333;
+}
+
+.comparisonBlock__tablePossibilityTitle_korp {
+    width: 54px;
+    padding: 0;
+    margin: 47px 93px 0px 0px;
+
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #333333; 
+}
+
+.comparisonBlock__tablePossibilityBodyRowSvg {
+    height: 17px;
+    width: 22px;
+}
+
+.comparisonBlock__tablePossibilityBodyRowSvg_min {
+    height: 6px;
+    width: 18px;
+    margin: 0px 202px 0px 1px;
+}
+
+.comparisonBlock__tablePossibilityBodyRowSvg_leftApply {
+    margin: 0px 200px 0px 0px;
+}
+
+.comparisonBlock__tablePossibilityBodyRowText {
+    width: 660px;
+    height: 24px;
+    margin: 0px 127px 0px 60px;
+
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    
+    color: #333333;
+}
+
+.comparisonBlock__tablePossibilityBodyRow {
+    display: flex;
+}
+
+@media (max-width: 1919px) {
+    .comparisonBlock__tablePossibilityBodyRowText {
+        width: 544px;
+        margin: 0px 119px 0px 60px;
+    }
+
+    .comparisonBlock__tablePossibilityBodyRowBorder {
+        width: 990px;
+    }
+
+    .comparisonBlock__tablePossibilityTitle {
+        margin: 47px 206px 45px 60px;
+    }
+
+    .comparisonBlock__tablePossibilityTitle_prof {
+        margin: 47px 128px 0px 0px;
+    }
+    
+    .comparisonBlock__tablePossibilityTitle_korp {
+        margin: 47px 44px 0px 0px;
+    }
+
+    .comparisonBlock__tablePossibilityBodyRowSvgContainer {
+        width: 182px;
+    }
+}
+
+@media (max-width: 1365px) {
+    .comparisonBlock__title {
+        font-size: 24px;
+        line-height: 34px;
+
+        margin: 0px 0px 30px 0px;
+    }
+
+    .comparisonBlock__tablePossibilityTitle {
+        width: 233px;
+        
+        margin: 40px 147px 42px 50px;
+    }
+
+    .comparisonBlock__tablePossibilityTitle_prof {
+        width: 53px;
+        margin: 50px 66px 0px 0px;
+
+        font-size: 18px;
+        line-height: 28px;
+    }
+    
+    .comparisonBlock__tablePossibilityTitle_korp {
+        width: 49px;
+        margin: 47px 42px 0px 0px;
+
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .comparisonBlock__tablePossibilityBodyRowBorder {
+        width: 640px;
+    }
+
+    .comparisonBlock__tablePossibilityBodyRowText {
+        width: 308px;
+        height: 48px;
+        margin: 0px 85px 0px 50px;
+    }
+
+    .comparisonBlock__tablePossibilityBodyRowSvg_min {
+        height: 6px;
+        width: 18px;
+        margin: 0px 10px 0px 1px;
+    }
+
+    .comparisonBlock__tablePossibilityBodyRowSvgContainer {
+        width: 119px;
+    }
+}

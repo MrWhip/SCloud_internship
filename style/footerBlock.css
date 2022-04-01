@@ -1,0 +1,369 @@
+.footer {
+    margin: 58px 0 0 0;
+}
+
+.footer__line {
+    width: 990px;
+    margin: 0 0 64px 0;
+
+    border: 1px solid #C0C0C0;
+}
+
+.footerBlock__textCollumnBody {
+    margin: 0 0 22px 0;
+    
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+
+    color: #333333;
+}
+
+.footerBlock__textCollumnTitle {
+    margin: 0 0 37px 0;
+
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+
+    color: #333333;
+}
+
+.footerBlock__textCollumn {
+    margin: 0 133px 0 0;
+}
+
+.footerBlock__text {
+    display: flex;
+
+    margin: 0 0 81px 0;
+}
+
+.footerBlock__textCollumn_penult {
+    margin: 0 166px 0 0;
+}
+
+.footerBlock__textCollumn_right {
+    margin: 0;
+}
+
+.footerBlock__textCollumnLinkArrow {
+    width: 12px;
+    height: 6px;
+    margin: 7px 0 0 10px;
+}
+
+.footerBlock__textCollumnLinkText {
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: #FF6500;
+}
+
+.footerBlock__textCollumnLink {
+    display: flex;
+}
+
+.footerBlock__infoContainer {
+    display: flex;
+
+    margin: 0 81px 0 0;
+}
+
+.footerBlock__infoText {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerBlock__infoTextTitle {
+    margin: 0 0 14px 0;
+
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #333333;
+}
+
+.footerBlock__infoTextsAddresses {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #333333;
+}
+
+.footerBlock__infoLogo {
+    margin: 0 36px 0 0;
+}
+
+.footerBlock__infoSocialLogo {
+    height: 52px;
+    width: 52px;
+    margin: 0 10px 0 0;
+}
+
+.footerBlock__infoSocialLogo_right {
+    margin: 0 35px 0 0;
+}
+
+.footerBlock__info {
+    display: flex;
+}
+
+.footerBlock__infoDownload {
+    display: flex;
+
+    margin: 0 0 56px 0;
+}
+
+.footerBlock__infoDownloadLogo {
+    width: 156px;
+    height: 54px;
+    margin: 0 8px 0 0;
+}
+
+.footerBlock__bottom {
+    display: flex;
+
+    background:#F4F4F4;
+}
+
+.footerBlock__bottomText {
+    margin: 23px 637px 23px 0;
+
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration-line: underline;
+
+    color: #333333;
+}
+
+.footerBlock__bottomSignature {
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+
+    color: #333333;
+}
+
+.footerBlock__infoDownloadGoogle {
+    width: 169px;
+}
+
+@media (max-width: 1919px) {
+    .footerBlock__textCollumn_penult {
+        margin: 0 97px 0 0;
+    }
+
+    .footerBlock__textCollumn {
+        margin: 0 98px 0 0;
+    }
+
+    .footerBlock__textCollumn_right {
+        margin: 0;
+    }
+
+    .footerBlock__infoTextTitle {
+        margin: 0 0 4px 0;
+    }
+
+    .footerBlock__infoTextsAddresses {
+        width: 280px;
+    }
+
+    .footerBlock__infoContainer {
+        display: flex;
+    
+        margin: 0 22px 0 0;
+    }
+
+    .footerBlock__infoSocialLogo {
+        height: 48px;
+        width: 48px;
+        margin: 0 5px 0 0;
+    }
+
+    .footerBlock__infoDownloadLogo {
+        width: 146px;
+        height: 47px;
+    }
+
+    .footerBlock__infoSocialLogo_right {
+        margin: 0 13px 0 0;
+    }
+
+    .footerBlock__info {
+        height: 67px;
+        margin: 0 0 44px 0;
+    }
+
+    .footer {
+        margin: 0;
+    }
+
+    .footerBlock__bottomText {
+        margin: 27px 427px 19px 0;
+    }
+
+    .footerBlock__bottomSignature {
+        margin: 27px 0px 19px 0;
+    }
+}
+
+@media (max-width: 1365px) {
+    .footer__line {
+        width: 100%;
+        margin: 0 0 58px 0;
+    }
+
+    .footerBlock__textCollumn {
+        display: flex;
+        
+        margin: 0 37px 0 0;
+    }
+    
+    .footerBlock__text {
+        display: flex;
+        justify-content: space-between;
+
+        margin:0;
+    }
+
+    .footerBlock__textCollumn_right {
+        margin: 0;
+    }
+
+    .footerBlock__textCollumnTitle {
+        margin: 0 0 37px 0;
+
+        font-size: 14px;
+    }
+
+    .footerBlock__info {
+        display: flex;
+        flex-wrap: wrap;
+
+        height: 131px;
+
+        margin: 0 0 23px 0;
+    }
+
+    .footerBlock__infoText {
+        text-align: right;
+    }
+
+    .footerBlock__infoTextsAddresses {
+        margin: 0 0 23px 0;
+    }
+
+    .footerBlock__bottomText {
+        width: 295px;
+        margin: 27px 0 19px 0;
+    }
+
+    .container_flex {
+        justify-content: space-between;
+        align-items: center;
+
+        height: 48px;
+    }
+
+    .footerBlock__infoSocial {
+        height: 50px;
+    }
+
+    .footerBlock__infoContainer {
+        width: 100%;
+        justify-content: space-between;
+
+        margin: 0;
+    }
+
+    .footerBlock__infoLogo {
+        margin: 0;
+    }
+
+    .footerBlock__textCollumnArrow {
+        width: 9px;
+        height: 4.5px;
+        margin: 15px 0 0 12.5px;
+
+        transform: rotate(-180deg);
+    }
+}
+
+@media (max-width: 767px) {
+    .footer__line {
+        margin: 0 0 41px 0;
+    }
+
+    .footerBlock__text {
+        flex-wrap: wrap;
+        justify-content: center;  
+    }
+
+    .footerBlock__textCollumn {
+        justify-content: center;
+
+        width: 160px;
+        margin: 0;
+    }
+
+    .footerBlock__textCollumnArrow {
+        transform: none; 
+    }
+
+    .footerBlock__infoContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footerBlock__infoLogo {
+        margin: 0 0 37px 0;
+    }
+
+    .footerBlock__infoText {
+        text-align: center;
+    }
+
+    .footerBlock__infoSocialLogo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .footerBlock__infoSocialLogo_right {
+        margin: 0;
+    }
+
+    .footerBlock__info {
+        height: auto;
+        justify-content: center;
+    }
+
+    .footerBlock__bottomSignature {
+        text-align: center;
+        width: 100%;
+    }
+
+    .footerBlock__infoDownload {
+        margin: 27px 0 0 0;
+    }
+}

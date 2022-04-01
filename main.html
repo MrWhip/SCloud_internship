@@ -8,49 +8,70 @@
     <link rel="stylesheet" href="style.css">
 </head>
     <header class="header"> 
-        <div class="header__wrapper">
-            <div class="header__logo">
-                <img src="img\logo.png" width="80" height="52" alt="">
-            </div>
-            <div class="header__links">
-                <div class="header__linkName">
-                    Решения
-                    <svg class="header__moreLinks">
-                        <use xlink:href="sprite.svg#arrow_down"></use>
-                    </svg>
+        <div class="container">
+            <div class="header__wrapper">
+                <img class="header__logo" src="img\logo.png" alt="">
+                <div class="header__links hideOnTablet">
+                    <a href="#">
+                        <div class="header__linkName">
+                            Решения
+                            <svg class="header__moreLinks">
+                                <use xlink:href="sprite.svg#arrow_down"></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <div class="header__linkName"><a href="#">Тарифы</a></div>
+                    <a href="#">
+                        <div class="header__linkName">
+                            Помощь
+                            <svg class="header__moreLinks">
+                                <use xlink:href="sprite.svg#arrow_down"></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="header__linkName">
+                            Компания
+                            <svg class="header__moreLinks">
+                                <use xlink:href="sprite.svg#arrow_down"></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <div class="header__linkName"><a href="#">Партнеры</a></div>
                 </div>
-                
-                <div class="header__linkName">Тарифы</div>
-                <div class="header__linkName">
-                    Помощь
-                    <svg class="header__moreLinks">
-                        <use xlink:href="sprite.svg#arrow_down"></use>
-                    </svg>
-                </div>
-                
-                <div class="header__linkName">
-                    Компания
-                    <svg class="header__moreLinks">
-                        <use xlink:href="sprite.svg#arrow_down"></use>
-                    </svg>
-                </div>
-                
-                <div class="header__linkName">Партнеры</div>
-            </div>
-                <svg class="header__search">
+                <svg class="header__search  clickable hideOnTablet">
                     <use xlink:href="sprite.svg#search"></use>
                 </svg>
-            <div class="header__number">8 (800) 555-91-15</div>
-            <div class="header__login">
-                <svg class="header__loginsvg">
-                    <use xlink:href="sprite.svg#login"></use>
-                </svg>
+                <div class="header__number_Phone">
+                    <div class="header__number">
+                        8 (800) 555-91-15
+                    </div>
+                    <div class="header__numberLogin hideOnDesktop showOnPhone">
+                        Вход
+                    </div>
+                    <div class="header__numberRegistration hideOnDesktop showOnPhone">
+                        Регистрация
+                    </div>
+                </div>
+                <div class="header__login clickable">
+                    <svg class="header__loginsvg hideOnLaptop showOnTablet hideOnPhone">
+                        <use xlink:href="sprite.svg#login"></use>
+                    </svg>
+                    <div class="header__loginText showOnLaptop hideOnTablet hideOnDesktop">
+                        Вход
+                    </div>
+                </div>
+                <div class="header__registration clickable hideOnPhone">Регистрация</div>
+                <div class="header__moreMenu showOnTablet hideOnDesktop">
+                    <svg class="header__moreMenusvg">
+                        <use xlink:href="sprite.svg#moreMenu"></use>
+                    </svg>
+                </div>
             </div>
-            <div class="header__registration">Регистрация</div>
         </div>
     </header>
     <div class="container">
-        <div class="section">
+        <div class="section section_smallTablet">
             <div class="landingBlock">
                 <div class="landingBlock__wrapper">
                     <div class="landingBlock__text">
@@ -63,15 +84,15 @@
                         <div class="landingBlock__description">
                             Программа позволяет эффективно организовать комплексный учет кадров, а также автоматизировать процесс подсчета зарплаты и других выплат сотрудникам
                         </div>
-                        <div class="landingBlock__link">
+                        <div class="landingBlock__link clickable">
                             Попробовать 14 дней бесплатно
                         </div>
                         <div class="landingBlock__note">
                             *входит в тарифы
                         </div>
                     </div>
-                    <div class="landingBlock__img">
-                        <img src="img\lending_img1.png" width="484" height="307" alt="">
+                    <div class="landingBlock__imgWrapper">
+                        <img class="landingBlock__img hideOnTablet" src="img\lending_img1.png" alt="">
                     </div>
                 </div>
             </div>
@@ -207,12 +228,14 @@
                         <svg class="benefitsBlock__cardImg">
                             <use xlink:href="sprite.svg#plus-circle"></use>
                         </svg>
-                        <div>
+                        <div class="benefitsBlock__cardText_bottom">
                             <div class="benefitsBlock__cardText">
                                 Попробуйте 1С: ЗУП 8
                             </div>
                             <div class="benefitsBlock__cardText benefitsBlock__cardText_orange">
-                                Попробовать бесплатно
+                                <a href="#" style="color: #FF6600;">
+                                    Попробовать бесплатно
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -232,7 +255,9 @@
                         Руководителям
                     </div>
                     <div class="whomBlock__button">
-                        Бухгалтерам и отделу кадров
+                        <div class="whomBlock__buttonWrapper">
+                            Бухгалтерам и отделу кадров
+                        </div>
                     </div>
                     <div class="whomBlock__button whomBlock__button_bigPadding">
                         Сотрудникам
@@ -554,7 +579,7 @@
             </div>
         </div>
         <div class="section section_small">
-            <div class="comparisonBlock">
+            <div class="comparisonBlock hideOnPhone">
                 <div class="comparisonBlock__title">
                     Сравнение функционала версий ПРОФ и КОРП
                 </div>
@@ -648,8 +673,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="comparisonBlock__tablePossibilityBodyRowBorder"></div>
-                            <div class="comparisonBlock__tablePossibilityBodyRow">
+                            <div class="comparisonBlock__tablePossibilityBodyRowBorder hideOnTablet"></div>
+                            <div class="comparisonBlock__tablePossibilityBodyRow hideOnTablet">
                                 <div class="comparisonBlock__tablePossibilityBodyRowText">
                                     Финансовая мотивация с использованием показателей эффективности (KPI)
                                 </div>
@@ -664,8 +689,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="comparisonBlock__tablePossibilityBodyRowBorder"></div>
-                            <div class="comparisonBlock__tablePossibilityBodyRow">
+                            <div class="comparisonBlock__tablePossibilityBodyRowBorder hideOnTablet"></div>
+                            <div class="comparisonBlock__tablePossibilityBodyRow hideOnTablet">
                                 <div class="comparisonBlock__tablePossibilityBodyRowText">
                                     Импорт значений показателей из 1С:Управление торговлей и 1С:Розница
                                 </div>
@@ -680,8 +705,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="comparisonBlock__tablePossibilityBodyRowBorder"></div>
-                            <div class="comparisonBlock__tablePossibilityBodyRow">
+                            <div class="comparisonBlock__tablePossibilityBodyRowBorder hideOnTablet"></div>
+                            <div class="comparisonBlock__tablePossibilityBodyRow hideOnTablet">
                                 <div class="comparisonBlock__tablePossibilityBodyRowText">
                                     Учет деятельности нескольких организаций
                                 </div>
@@ -696,8 +721,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="comparisonBlock__tablePossibilityBodyRowBorder"></div>
-                            <div class="comparisonBlock__tablePossibilityBodyRow">
+                            <div class="comparisonBlock__tablePossibilityBodyRowBorder hideOnTablet"></div>
+                            <div class="comparisonBlock__tablePossibilityBodyRow hideOnTablet">
                                 <div class="comparisonBlock__tablePossibilityBodyRowText">
                                     Возможность изменения (конфигурирования) прикладного решения
                                 </div>
@@ -712,8 +737,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="comparisonBlock__tablePossibilityBodyRowBorder"></div>
-                            <div class="comparisonBlock__tablePossibilityBodyRow">
+                            <div class="comparisonBlock__tablePossibilityBodyRowBorder hideOnTablet"></div>
+                            <div class="comparisonBlock__tablePossibilityBodyRow hideOnTablet">
                                 <div class="comparisonBlock__tablePossibilityBodyRowText">
                                     Учет кадров и анализ кадрового состава
                                 </div>
@@ -728,8 +753,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="comparisonBlock__tablePossibilityBodyRowBorder"></div>
-                            <div class="comparisonBlock__tablePossibilityBodyRow">
+                            <div class="comparisonBlock__tablePossibilityBodyRowBorder hideOnTablet"></div>
+                            <div class="comparisonBlock__tablePossibilityBodyRow hideOnTablet">
                                 <div class="comparisonBlock__tablePossibilityBodyRowText">
                                     Расчет и учет заработной платы
                                 </div>
@@ -744,8 +769,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="comparisonBlock__tablePossibilityBodyRowBorder"></div>
-                            <div class="comparisonBlock__tablePossibilityBodyRow">
+                            <div class="comparisonBlock__tablePossibilityBodyRowBorder hideOnTablet"></div>
+                            <div class="comparisonBlock__tablePossibilityBodyRow hideOnTablet">
                                 <div class="comparisonBlock__tablePossibilityBodyRowText">
                                     Управление денежными расчетами, включая депонирование
                                 </div>
@@ -760,8 +785,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="comparisonBlock__tablePossibilityBodyRowBorder"></div>
-                            <div class="comparisonBlock__tablePossibilityBodyRow">
+                            <div class="comparisonBlock__tablePossibilityBodyRowBorder hideOnTablet"></div>
+                            <div class="comparisonBlock__tablePossibilityBodyRow hideOnTablet">
                                 <div class="comparisonBlock__tablePossibilityBodyRowText">
                                     Исчисление налогов и страховых взносов (в т.ч. для УСН и ЕНВД)
                                 </div>
@@ -776,8 +801,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="comparisonBlock__tablePossibilityBodyRowBorder"></div>
-                            <div class="comparisonBlock__tablePossibilityBodyRow">
+                            <div class="comparisonBlock__tablePossibilityBodyRowBorder hideOnTablet"></div>
+                            <div class="comparisonBlock__tablePossibilityBodyRow hideOnTablet">
                                 <div class="comparisonBlock__tablePossibilityBodyRowText">
                                     Подготовка регламентированной отчетности
                                 </div>
@@ -798,7 +823,7 @@
                 </div>
             </div>
         </div>
-        <div class="section section_slider">
+        <div class="section section_slider hideOnTablet">
             <div class="slider__main">
                 <div class="slider__mainArrowWrapper slider__mainArrow_leftWrapper">
                     <svg class="slider__mainArrow slider__mainArrow_left">
@@ -823,7 +848,7 @@
                     </div>
                 </div>
                 <div class="slider__mainArrowWrapper slider__mainArrow_rightWrapper">
-                    <svg class="slider__mainArrow slider__mainArrow_right">
+                    <svg class="slider__mainArrow slider__mainArrow_right slider__mainArrow_active">
                         <use xlink:href="sprite.svg#arrow-left"></use>
                     </svg>
                 </div>
@@ -848,14 +873,15 @@
         </div>
         <div class="section">
             <div class="priceBlock">
-                <div class="priceBlock__title">
+                <div class="priceBlock__title showOnTablet hideOnPhone">
                     Цена на 1С: ЗУП 8 онлайн <span style="color:#FF6600">от 760 ₽ в месяц</span>
+                </div>
+                <div class="priceBlock__title showOnPhone hideOnTablet hideOnDesktop hideOnLaptop">
+                    Цена на 1С: Управление сервисным центром в облаке<br> <span style="color:#FF6600">от 760 ₽ в месяц</span>
                 </div>
                 <div class="priceBlock__input">
                     <div class="priceBlock__inputBlock">
-                        <div class="priceBlock__inputBlockText">
-                            Имя*
-                        </div>
+                        <input class="priceBlock__inputBlockText" placeholder="Имя*">
                     </div>
                     <div class="priceBlock__inputBlock">
                         <div class="priceBlock__inputBlockText priceBlock__inputBlockText_ru">
@@ -866,14 +892,10 @@
                                 <use xlink:href="sprite.svg#arrow_down_grey"></use>
                             </svg>
                         </div>
-                        <div class="priceBlock__inputBlockText priceBlock__inputBlockText_number">
-                            +7
-                        </div>
+                        <input class="priceBlock__inputBlockText" placeholder="+7">
                     </div>
                     <div class="priceBlock__inputBlock">
-                        <div class="priceBlock__inputBlockText priceBlock__inputBlockText_mail">
-                            E-mail*
-                        </div>
+                        <input class="priceBlock__inputBlockText" placeholder="E-mail*">
                     </div>
                 </div>
                 <div class="priceBlock__inputDescription">
@@ -883,14 +905,14 @@
                     <div class="priceBlock__link">
                         Попробовать 14 дней бесплатно
                     </div>
-                    <div class="priceBlock__linkDescription">
-                        Начиная работу, я принимаю условия <span style="color:#FF6600"><u><span style="color:#FF6600" id="clickable">Оферты</span></u></span><br> и соглашаюсь на обработку персональных данных в соответствии с <span style="color:#FF6600"><u><span style="color:#FF6600" id="clickable">Политикой конфиденциальности</span></u></span>
+                    <div class="priceBlock__linkDescription hideOnLaptop showOnTablet">
+                        Начиная работу, я принимаю условия <a href="#"><span style="color:#FF6600"><u><span style="color:#FF6600">Оферты</span></u></span></a><br> и соглашаюсь на обработку персональных данных в соответствии с <a href="#"><span style="color:#FF6600"><u><span style="color:#FF6600">Политикой конфиденциальности</span></u></span></a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="section section_big">
-            <div class="reportsBlock">
+            <div class="reportsBlock hideOnTablet">
                 <div class="reportsBlock__title">
                     С какими отчетами Вы можете работать?
                 </div>
@@ -976,8 +998,7 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="whyBlock__moreConteiner">
+                    <div class="whyBlock__moreConteiner hideOnPhone">
                         <div class="whyBlock__more">
                             Узнать больше о нас
                         </div>
@@ -986,8 +1007,8 @@
                         </svg>
                     </div>
                 </div>
-                <div class="whyBlock__img">
-                    <img src="img\lending_img2.png" width="484" height="307" alt="">
+                <div class="whyBlock__imgWrapper">
+                    <img class="whyBlock__img" src="img\lending_img2.png" alt="">
                 </div>
             </div>
         </div>
@@ -1006,7 +1027,7 @@
                                 1С: Бухгалтерия<br> ПРОФ/КОРП
                             </div>
                         </div>
-                        <div class="maybeBlock__collumnText">
+                        <div class="maybeBlock__collumnText maybeBlock__collumnText_phone">
                             Конфигурация разработана в соответствии с<br> нормами действующего законодательства.<br> Учет хозяйственной деятельности, заработной<br> платы,  сдача отчетности в электронном виде.
                         </div>
                         <div class="maybeBlock__collumnLink">
@@ -1030,7 +1051,7 @@
                         <div class="maybeBlock__collumnText">
                             В системе представлены новости, комментарии<br> и консультации по вопросам бухгалтерского,<br> налогового и кадрового учета, рекомендации<br> по налогообложению, пошаговые инструкции<br> по их отражению в программе.
                         </div>
-                        <div class="maybeBlock__collumnLink maybeBlock__collumnLink_center">
+                        <div class="maybeBlock__collumnLink maybeBlock__collumnLink_phone">
                             <div class="maybeBlock__collumnLinkText">
                                 Подробнее
                             </div>
@@ -1039,7 +1060,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="maybeBlock__collumn">
+                    <div class="maybeBlock__collumn maybeBlock__collumn_right hideOnPhone">
                         <div class="maybeBlock__collumnTitle">
                             <div class="maybeBlock__collumnTitleImg">
                                 <img src="img\1C_reporting.png" width="51" height="48" alt="">
@@ -1070,10 +1091,7 @@
                 </div>
                 <div class="priceBlock__input">
                     <div class="priceBlock__inputBlock">
-                        <div class="priceBlock__inputBlockText">
-                            Имя*
-                            <input class="input" type="text" size="20">
-                        </div>
+                        <input class="priceBlock__inputBlockText" placeholder="Имя*">
                     </div>
                     <div class="priceBlock__inputBlock">
                         <div class="priceBlock__inputBlockText priceBlock__inputBlockText_ru">
@@ -1084,14 +1102,10 @@
                                 <use xlink:href="sprite.svg#arrow_down_grey"></use>
                             </svg>
                         </div>
-                        <div class="priceBlock__inputBlockText priceBlock__inputBlockText_number">
-                            +7
-                        </div>
+                        <input class="priceBlock__inputBlockText" placeholder="+7">
                     </div>
                     <div class="priceBlock__inputBlock">
-                        <div class="priceBlock__inputBlockText priceBlock__inputBlockText_mail">
-                            E-mail*
-                        </div>
+                        <input class="priceBlock__inputBlockText" placeholder="E-mail*">
                     </div>
                 </div>
                 <div class="priceBlock__inputDescription">
@@ -1102,27 +1116,33 @@
                         Попробовать 14 дней бесплатно
                     </div>
                     <div class="priceBlock__linkDescription">
-                        Начиная работу, я принимаю условия <span style="color:#FF6600"><u><span style="color:#FF6600" id="clickable">Оферты</span></u></span><br> и соглашаюсь на обработку персональных данных в соответствии с <span style="color:#FF6600"><u><span style="color:#FF6600" id="clickable">Политикой конфиденциальности</span></u></span>
+                        Начиная работу, я принимаю условия <span style="color:#FF6600"><u><span style="color:#FF6600" class="clickable">Оферты</span></u></span><br> и соглашаюсь на обработку персональных данных в соответствии с <span style="color:#FF6600"><u><span style="color:#FF6600" class="clickable">Политикой конфиденциальности</span></u></span>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer">
+        </div> 
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer__line showOnLaptop hideOnDesktop"></div>
             <div class="footerBlock">
                 <div class="footerBlock__text">
                     <div class="footerBlock__textCollumn">
                         <div class="footerBlock__textCollumnTitle">
                             Типовые решения
                         </div>
-                        <div class="footerBlock__textCollumnBody">
-                            1С: Бухгалтерия ПРОФ/КОРП<br> 1С: Зарплата и управление<br> персоналом ПРОФ/КОРП<br> 1С: Комплексная автоматизация<br> 1С: Управление нашей фирмой
+                        <svg class="footerBlock__textCollumnArrow hideOnDesktop showOnTablet">
+                            <use class="hideOnDesktop showOnTablet" xlink:href="sprite.svg#arrow_down_grey"></use>
+                        </svg>
+                        <div class="footerBlock__textCollumnBody hideOnTablet">
+                            <a href="#">1С: Бухгалтерия ПРОФ/КОРП</a><br> <a href="#">1С: Зарплата и управление</a><br> <a href="#">персоналом ПРОФ/КОРП</a><br> <a href="#">1С: Комплексная автоматизация</a><br> <a href="#">1С: Управление нашей фирмой</a>
                         </div>
-                        <div class="footerBlock__textCollumnLink">
+                        <div class="footerBlock__textCollumnLink  clickable  hideOnTablet">
                             <div class="footerBlock__textCollumnLinkText">
                                 Показать больше
                             </div>
                             <svg class="footerBlock__textCollumnLinkArrow">
-                                <use xlink:href="sprite.svg#arrow_down_orange"></use>
+                                <use xlink:href="sprite.svg#arrow_down_grey"></use>
                             </svg>
                         </div>
                     </div>
@@ -1130,10 +1150,13 @@
                         <div class="footerBlock__textCollumnTitle">
                             Отраслевые решения
                         </div>
-                        <div class="footerBlock__textCollumnBody">
-                            1С: CRM ПРОФ<br> 1С: Учет в управляющих<br> компаниях ЖКХ, ТСЖ и ЖСК<br> 1С: Автосервис<br> 1С: Салон Красоты
+                        <svg class="footerBlock__textCollumnArrow hideOnDesktop showOnTablet">
+                            <use class="hideOnDesktop showOnTablet" xlink:href="sprite.svg#arrow_down_grey"></use>
+                        </svg>
+                        <div class="footerBlock__textCollumnBody hideOnTablet">
+                            <a href="#">1С: CRM ПРОФ</a><br> <a href="#">1С: Учет в управляющих</a><br> <a href="#">компаниях ЖКХ, ТСЖ и ЖСК</a><br> <a href="#">1С: Автосервис</a><br> <a href="#">1С: Салон Красоты</a>
                         </div>
-                        <div class="footerBlock__textCollumnLink">
+                        <div class="footerBlock__textCollumnLink  clickable  hideOnTablet">
                             <div class="footerBlock__textCollumnLinkText">
                                 Показать больше
                             </div>
@@ -1146,18 +1169,24 @@
                         <div class="footerBlock__textCollumnTitle">
                             Сервисы
                         </div>
-                        <div class="footerBlock__textCollumnBody">
-                            1С: Контрагент<br> 1C: СтартЭДО<br> 1С-Отчетность<br> 1С: Контрагент<br> 1СПАРК Риски
+                        <svg class="footerBlock__textCollumnArrow hideOnDesktop showOnTablet">
+                            <use class="hideOnDesktop showOnTablet" xlink:href="sprite.svg#arrow_down_grey"></use>
+                        </svg>
+                        <div class="footerBlock__textCollumnBody hideOnTablet">
+                            <a href="#">1С: Контрагент</a><br> <a href="#">1C: СтартЭДО</a><br> <a href="#">1С-Отчетность</a><br> <a href="#">1С: Контрагент</a><br> <a href="#">1СПАРК Риски</a>
                         </div>
                     </div>
                     <div class="footerBlock__textCollumn footerBlock__textCollumn_right">
                         <div class="footerBlock__textCollumnTitle">
                             Доп. возможности
                         </div>
-                        <div class="footerBlock__textCollumnBody">
-                            ФГИС Меркурий<br> ЕГАИС<br> Клиент-банк<br> Директ-банк<br> Торговое оборудование
+                        <svg class="footerBlock__textCollumnArrow hideOnDesktop showOnTablet">
+                            <use class="hideOnDesktop showOnTablet" xlink:href="sprite.svg#arrow_down_grey"></use>
+                        </svg>
+                        <div class="footerBlock__textCollumnBody hideOnTablet">
+                            <a href="#">ФГИС Меркурий</a><br> <a href="#">ЕГАИС</a><br> <a href="#">Клиент-банк</a><br> <a href="#">Директ-банк</a><br> <a href="#">Торговое оборудование</a>
                         </div>
-                        <div class="footerBlock__textCollumnLink">
+                        <div class="footerBlock__textCollumnLink  clickable  hideOnTablet">
                             <div class="footerBlock__textCollumnLinkText">
                                 Показать больше
                             </div>
@@ -1173,8 +1202,11 @@
                             <img src="img\logo.png" width="80" height="52" alt="">
                         </div>
                         <div class="footerBlock__infoText">
-                            <div class="footerBlock__infoTextTitle">
+                            <div class="footerBlock__infoTextTitle hideOnLaptop">
                                 8 800 555-91-15 | +7 (495) 786-59-15
+                            </div>
+                            <div class="footerBlock__infoTextTitle showOnLaptop hideOnDesktop">
+                                8 800 555-91-15
                             </div>
                             <div class="footerBlock__infoTextsAddresses">
                                 111024, г. Москва, ул. Авиамоторная, 69<br> 300028, г. Тула, ул. Болдина, 98
@@ -1182,42 +1214,56 @@
                         </div>
                     </div>
                     <div class="footerBlock__infoSocial">
-                        <svg class="footerBlock__infoSocialLogo">
-                            <use xlink:href="sprite.svg#inst_logo"></use>
-                        </svg>
-                        <svg class="footerBlock__infoSocialLogo">
-                            <use xlink:href="sprite.svg#fb_logo"></use>
-                        </svg>
-                        <svg class="footerBlock__infoSocialLogo">
-                            <use xlink:href="sprite.svg#vk_logo"></use>
-                        </svg>
-                        <svg class="footerBlock__infoSocialLogo">
-                            <use xlink:href="sprite.svg#ok_logo"></use>
-                        </svg>
-                        <svg class="footerBlock__infoSocialLogo footerBlock__infoSocialLogo_right">
-                            <use xlink:href="sprite.svg#youtube_logo"></use>
-                        </svg>  
+                        <a href="#">
+                            <svg class="footerBlock__infoSocialLogo">
+                                <use xlink:href="sprite.svg#inst_logo"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="footerBlock__infoSocialLogo">
+                                <use xlink:href="sprite.svg#fb_logo"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="footerBlock__infoSocialLogo">
+                                <use xlink:href="sprite.svg#vk_logo"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="footerBlock__infoSocialLogo">
+                                <use xlink:href="sprite.svg#ok_logo"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="footerBlock__infoSocialLogo footerBlock__infoSocialLogo_right">
+                                <use xlink:href="sprite.svg#youtube_logo"></use>
+                            </svg>
+                        </a>  
                     </div>
                     <div class="footerBlock__infoDownload">
-                        <svg class="footerBlock__infoDownloadLogo">
-                            <use xlink:href="sprite.svg#appstore"></use>
-                        </svg>
-                        <img src="img\google-play-badge.png" width="169" height="53" alt=""> 
+                        <a href="#">
+                            <svg class="footerBlock__infoDownloadLogo hideOnPhone">
+                                <use xlink:href="sprite.svg#appstore"></use>
+                            </svg>
+                        </a>
+                        <a href="#"><img class="footerBlock__infoDownloadGoogle hideOnLaptop showOnPhone" src="img\google-play-badge.png" alt=""></a>
                     </div>
                 </div>
-                <div class="footerBlock__bottom">
-                    <div class="footerBlock__bottomText">
-                        Оферта   |   Политика конфиденциальности
+            </div>
+        </div>
+            <div class="footerBlock__bottom">
+                <div class="container container_flex">
+                    <div class="footerBlock__bottomText hideOnPhone">
+                        <a href="#">Оферта</a>   |   <a href="#">Политика конфиденциальности</a>
                     </div>
                     <div class="footerBlock__bottomSignature">
                         © 2019 scloud.ru ООО "СервисКлауд"
                     </div>
                 </div>
             </div>
-            
-        </div>
     </div>
     
 </body>
-<script src="./main.js"></script>
+<script src="./whomBlock-selector.js"></script>
+<script src="./slider.js"></script>
 </html>

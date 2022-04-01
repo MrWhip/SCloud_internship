@@ -1,4 +1,218 @@
 .header {
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 0 136px 0;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
-/*# sourceMappingURL=header.css.map */
+
+.header__linkName {
+  display: flex;
+  align-items: center;
+
+  margin: 0 30px 0 0;
+
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: capitalize;
+
+  color: #333333;
+}
+
+.header__registration {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+
+  text-transform: capitalize;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 19px 0 17px 0;
+}
+
+.header__links {
+  display: flex;
+  align-items: center;
+
+  margin: 0 30px 0 0;
+}
+
+.header__moreLinks {
+  height: 4px;
+  width: 8px;
+  margin: 0 0 0 10px;
+}
+
+.header__search {
+  height: 15px;
+  width: 15px;
+  margin: 0 40px 0 0;
+}
+
+.header__loginsvg {
+  height: 18px;
+  width: 60px;
+  margin: 0 20px 0 0;
+}
+
+.header__number {
+  margin: 0 103px 0 0;
+
+  font-family: 'PT Sans Caption';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  
+  color: #6F6F6F;
+}
+
+.header__registration {
+  display: flex;
+  align-items: center;
+
+  font-family: 'PT Sans Caption';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+
+  text-align: center;
+
+  color: #FFFFFF;
+
+  padding: 15px 30px;
+  background: #FF6600;
+  border-radius: 50px;
+}
+
+.header__logo {
+  width: 80px;
+  height: 52px;
+  margin: 0 70px 0 0;
+}
+
+.header__number {
+  width: 130px;
+}
+
+.header__loginText {
+  margin: 0 20px 0 0;
+
+  font-family: 'PT Sans Caption';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #6F6F6F;
+}
+
+.header__moreMenusvg {
+  width: 21px;
+  height: 16px;
+}
+
+@media (max-width: 1919px) {
+  .header__links {
+    justify-content: space-between;
+
+    width: 435px;
+    margin: 0 30px 0 0;
+  }
+
+  .header__logo {
+    margin: 0 30px 0 0;
+  }
+
+  .header__linkName {
+    margin: 0 20px 0 0;
+  }
+
+  .header__search {
+    margin: 0 32px 0 0;
+  }
+
+  .header__registration {
+    padding: 15px 25px;
+  }
+
+  .header__number {
+    margin: 0 34px 0 0;
+  }
+}
+
+@media (max-width: 1365px) {
+  .header__logo {
+    width: 62px;
+    height: 40px;
+    margin: 0 40px 0 0;
+  }
+
+  .header__number {
+    margin: 0 127px 0 0;
+  }
+
+  .header__registration {
+    margin: 0 31px 0 0;
+  }
+
+  .header {
+    margin: 0 0 60px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__logo {
+    width: 70px;
+    height: 45.25px;
+    margin: 0 24px 0 0;
+  }
+
+  .header__number_Phone {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 137px;
+  }
+
+  .header__number {
+    margin: 0;
+  }
+
+  .header__numberLogin {
+    margin: 6px 13px 0 0;
+
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #333333;
+  }
+
+  .header__numberRegistration {
+    margin: 6px 0 0 0;
+
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+      
+    color: #FF6600;
+}
+}
